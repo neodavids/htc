@@ -20,3 +20,7 @@ Route::get('/contact', function () {
 });
 
 Route::resource('/cars', 'CarsController');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

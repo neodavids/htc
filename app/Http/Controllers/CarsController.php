@@ -58,7 +58,7 @@ class CarsController extends Controller
         $filename = pathinfo($fileNameWithExt, PATHINFO_FILENAME);
         $extension = $request->file('image2')->getClientOriginalExtension();
         $fileNameToStore2 = $filename.'_'.time().'.'.$extension;
-        $request->image1->storeAs('public/img',$fileNameToStore2);
+        $request->image2->storeAs('public/img',$fileNameToStore2);
       }
 
       if($request->has('image3')){
@@ -66,7 +66,7 @@ class CarsController extends Controller
         $filename = pathinfo($fileNameWithExt, PATHINFO_FILENAME);
         $extension = $request->file('image3')->getClientOriginalExtension();
         $fileNameToStore3 = $filename.'_'.time().'.'.$extension;
-        $request->image1->storeAs('public/img',$fileNameToStore3);
+        $request->image3->storeAs('public/img',$fileNameToStore3);
       }
 
       if($request->has('image4')){
@@ -74,7 +74,7 @@ class CarsController extends Controller
         $filename = pathinfo($fileNameWithExt, PATHINFO_FILENAME);
         $extension = $request->file('image4')->getClientOriginalExtension();
         $fileNameToStore4 = $filename.'_'.time().'.'.$extension;
-        $request->image1->storeAs('public/img',$fileNameToStore4);
+        $request->image4->storeAs('public/img',$fileNameToStore4);
       }
 
         Car::create(['make'=> request('make'),
@@ -93,7 +93,7 @@ class CarsController extends Controller
 
 
 
-        return redirect('/cars/create');
+        return redirect('/cars');
     }
 
     /**

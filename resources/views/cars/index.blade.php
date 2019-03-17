@@ -16,7 +16,7 @@
       </div>
     </div>
   </div>
-  <br>
+
 
 @endsection
 
@@ -27,18 +27,20 @@
 
         
 <div class="col-12 col-sm-12 col-md-6 col-lg-3">
-<div class="card" >
+<div class="card" style="margin-top:25px">
   <img class="card-img-top" src="storage/img/{{$car->image1}}" alt="Car image cap">
   <div class="card-body">
     <h5 class="card-title">{{$car->make}} {{$car->model}}</h5>
     <p>Model: {{$car->model}}</p>
           <p>Make: {{$car->make}}</p>
           <p>Milleage: {{$car->milleage}}</p>
-          <p>Other: {{$car->fueltype}}</p>
+          <p>Engine: {{$car->fueltype}}</p>
           <p>Price: BWP{{$car->price}}</p>
 
           @if(Auth::user())
+          <a href="/cars/{{$car->id}}" class="btn btn-dark">View Car</a>
           <a href="/cars/{{$car->id}}/edit" class="btn btn-danger">Edit</a>
+
           @else
           <a href="/cars/{{$car->id}}" class="btn btn-dark">View Car</a>
           @endif
