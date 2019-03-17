@@ -36,8 +36,15 @@
           <p>Milleage: {{$car->milleage}}</p>
           <p>Other: {{$car->fueltype}}</p>
           <p>Price: BWP{{$car->price}}</p>
-    <a href="/cars/{{$car->id}}/edit" class="btn btn-primary">Edit</a>
-    <a href="/cars/{{$car->id}}" class="btn btn-primary">View</a>
+
+          @if(Auth::user())
+          <a href="/cars/{{$car->id}}/edit" class="btn btn-danger">Edit</a>
+          @else
+          <a href="/cars/{{$car->id}}" class="btn btn-dark">View Car</a>
+          @endif
+          
+    
+   
  
   </div>
 </div>

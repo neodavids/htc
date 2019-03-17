@@ -20,7 +20,10 @@
           <nav class="nav nav-masthead justify-content-center">
             <a class="nav-link active" href="index.php">Home</a>
             <a class="nav-link" href="/cars">Cars</a>
-            <a class="nav-link" href="/contact">Contacts</a> 
+            <a class="nav-link" href="/contact">Contacts</a>
+            @if(Auth::user())
+            <a class="nav-link" href="/cars/create">Dashboard</a>
+          @endif
           </nav>
         </div>
       </header>

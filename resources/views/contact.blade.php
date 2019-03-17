@@ -43,6 +43,11 @@
         <li class="nav-item">
           <a class="nav-link" href="#about">About</a>
         </li>
+        @if(Auth::user())
+        <li class="nav-item">
+          <a class="nav-link" href="/cars/create">Dashboard</a>
+        </li>
+          @endif
       </ul>
     </div>
   </nav>

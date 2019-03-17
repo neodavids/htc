@@ -50,6 +50,11 @@
         <li class="nav-item">
           <a class="nav-link" href="/contact#about">About</a>
         </li>
+        @if(Auth::user())
+        <li class="nav-item">
+          <a class="nav-link" href="/cars/create">Dashboard</a>
+        </li>
+          @endif
       </ul>
 
       <form class="form-inline">
