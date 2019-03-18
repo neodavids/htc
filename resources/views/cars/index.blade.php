@@ -54,5 +54,8 @@
 
     @endforeach
 </div>
+<div class="row">
+{{$cars->links()}}
+</div>
   </div>
 @endsection
