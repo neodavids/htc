@@ -23,11 +23,12 @@
 @section('content')
 <div class="container">
   <div class="row">
+  
 @foreach($cars as $car)
 
         
 <div class="col-12 col-sm-12 col-md-6 col-lg-3">
-<div class="card" style="margin-top:25px">
+<div class="card h-100">
   <img class="card-img-top" src="storage/img/{{$car->image1}}" alt="Car image cap">
   <div class="card-body">
     <h5 class="card-title">{{$car->make}} {{$car->model}}</h5>
@@ -51,11 +52,14 @@
   </div>
 </div>
 </div>
-
+<br><br>
     @endforeach
 </div>
 <div class="row">
-{{$cars->links()}}
+  <div class="col-md-12">
+    <br>
+    {{$cars->links()}}
+  </div>
 </div>
   </div>
 @endsection

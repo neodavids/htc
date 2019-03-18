@@ -24,6 +24,10 @@ class CreateCarsTable extends Migration
             $table->string('drivetype');
             $table->string('engine');
             $table->string('price');
+            $table->string('type');
+            $table->string('transmission');
+            $table->string('doors');
+            $table->text('features');
             $table->string('image1');
             $table->string('image2');
             $table->string('image3');

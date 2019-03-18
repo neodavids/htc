@@ -175,7 +175,60 @@
         <div class="col-md-6">
             <div class="form-group">
                 <label for="price">Price *</label>
-                <input id="price" type="text" name="price" class="form-control" required="required" data-error="Model is required.">
+                <input id="price" type="text" name="price" class="form-control" required="required" data-error="Price is required.">
+                <div class="help-block with-errors"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="form_need4">Vehicle Type *</label>
+                <select id="form_need4" name="type" class="form-control" required="required" data-error="Please specify type.">
+                    <option value=""></option>
+                    <option value="4x4">4x4</option>
+                    <option value="Sedan">Sedan</option>
+                    <option value="Sport">Sport</option>
+                    <option value="SUV">SUV</option>
+                    <option value="Bakkie">Bakkie</option>
+                </select>
+                <div class="help-block with-errors"></div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="form_need24">Transmission *</label>
+                <select id="form_need24" name="transmission" class="form-control" required="required" data-error="Please specify car transmission.">
+                    <option value=""></option>
+                    <option value="Automatic">Automatic</option>
+                    <option value="Manual">Manual</option>
+                </select>
+                <div class="help-block with-errors"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+            <label for="form_need243">Doors *</label>
+                <select id="form_need243" name="doors" class="form-control" required="required" data-error="Please specify number of doors.">
+                    <option value=""></option>
+                    <option value="2">2</option>
+                    <option value="4">4</option>
+                </select>
+                <div class="help-block with-errors"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label for="form_message1">Vehicle Features*</label>
+                <textarea id="form_message1" name="features" class="form-control" placeholder="Vehicle key features *" rows="4" required="required" data-error="Add some features."></textarea>
                 <div class="help-block with-errors"></div>
             </div>
         </div>

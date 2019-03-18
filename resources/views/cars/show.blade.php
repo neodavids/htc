@@ -108,6 +108,24 @@
             </div>
         </div>
     </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input id="phone" type="text" name="phone" class="form-control" placeholder="(+267) 71234567 *" required="required" data-error="phone number is required.">
+                <div class="help-block with-errors"></div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="location">Location *</label>
+                <input id="location" type="location" name="location" class="form-control" placeholder="Please provide your location *" required="required" data-error="Location is required.">
+                <div class="help-block with-errors"></div>
+            </div>
+        </div>
+    </div>
+
     <div class="row">
         <div class="col-md-6">
             <div class="form-group">
