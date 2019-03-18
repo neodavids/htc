@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 class CarsController extends Controller
 {
+  
 
   public function __construct(){
     $this->middleware('auth')->except(['index','show']);
@@ -119,6 +120,7 @@ class CarsController extends Controller
      */
     public function edit(Car $car)
     {
+      
         return view('cars.edit', compact('car'));
     }
 
@@ -140,10 +142,14 @@ class CarsController extends Controller
         $car->drivetype = request('drivetype');
         $car->engine = request('engine');
         $car->price = request('price');
+        $car->type = request('type');
+        $car->transmission = request('transmission');
+        $car->doors = request('doors');
+        $car->features = request('features');
 
         $car->save();
 
-        return redirect('/cars/create'); 
+        return redirect('/cars'); 
     }
 
     /**
