@@ -1,8 +1,8 @@
 @extends('main')
 @section('url', "../img/logo.svg")
 @section('jumbotron')
-
-<div class="container">
+<section style="background-color:red; background-size:cover;">
+<div class="container" >
   <div class="jumbotron" style="background-color:#343A40; color:white">
     <div class="container">
       <h1 class="display-3">{{$car->year}} {{$car->make}} {{$car->model}}</h1>
@@ -42,6 +42,7 @@
     </div>
   </div>
 </div>
+</section>
 
 @endsection
 
@@ -59,29 +60,27 @@
           <div class="carousel-item active">
             <img src="../storage/img/{{$car->image1}}" alt="{{$car->model}} image" width="1100" height="500">
             <div class="carousel-caption">
-              <h3>Los Angeles</h3>
-              <p>We had such a great time in LA!</p>
+              <h3>{{$car->make}} {{$car->model}}</h3>
+              
             </div>
           </div>
           <div class="carousel-item">
             <img src="../storage/img/{{$car->image2}}" alt="{{$car->model}} image" width="1100" height="500">
             <div class="carousel-caption">
-              <h3>Chicago</h3>
-              <p>Thank you, Chicago!</p>
+            <h3>{{$car->engine}} {{$car->fueltype}}</h3>
+             
             </div>
           </div>
           <div class="carousel-item">
             <img src="../storage/img/{{$car->image3}}" alt="{{$car->model}} image" width="1100" height="500">
             <div class="carousel-caption">
-              <h3>Chicago</h3>
-              <p>Thank you, Chicago!</p>
+      
             </div>
           </div>
           <div class="carousel-item">
             <img src="../storage/img/{{$car->image4}}" alt="{{$car->model}} image" width="1100" height="500">
             <div class="carousel-caption">
-              <h3>New York</h3>
-              <p>We love the Big Apple!</p>
+            
             </div>
           </div>
         </div>
@@ -238,19 +237,14 @@
           <h5 class="mb-0">
             <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
               aria-controls="collapseOne">
-              Collapsible Group Item #1
+              What kind of inspection do you perform on your used cars? 
             </button>
           </h5>
         </div>
 
         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
           <div class="card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
-            officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3
-            wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
-            excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
-            you probably haven't heard of them accusamus labore sustainable VHS.
+          All of our vehicles go thru an extensive mechanical, safety inspection, We take pride in delivering cars that meet and exceed industry standards for reconditioning. Our used cars inspection are made available to our customers. So if you are considering a used car please ask for your complimentary safety inspection report.
           </div>
         </div>
       </div>
@@ -259,13 +253,13 @@
           <h5 class="mb-0">
             <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
               aria-expanded="false" aria-controls="collapseTwo">
-              Collapsible Group Item #2
+              What type of vehicles can you offer?
             </button>
           </h5>
         </div>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
           <div class="card-body">
-
+          We are specialist trained car buyers and can assist with your everyday corolla or a rare exotic such as Ferrari. We deal in just about every make and model, however most of our request are for the following brands. ( BMW, Nissan, Toyota, VW, Mercedes, Ford, Audi )
           </div>
         </div>
       </div>
@@ -274,18 +268,13 @@
           <h5 class="mb-0">
             <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
               aria-expanded="false" aria-controls="collapseThree">
-              Collapsible Group Item #3
+               Why is test driving a car important?
             </button>
           </h5>
         </div>
         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
           <div class="card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
-            officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3
-            wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
-            excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
-            you probably haven't heard of them accusamus labore sustainable VHS.
+          While window shopping is a good way to get started on your car buying journey, the only way to get the best feel for a vehicle is to get behind the wheel for a test drive.
           </div>
         </div>
       </div>

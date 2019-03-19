@@ -1,14 +1,15 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" prefix="og: http://ogp.me/ns#">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta property="og:url"           content="https://www.hitechcars.co.bw/" />
-  <meta property="og:type"          content="website" />
-  <meta property="og:title"         content="hitech cars" />
-  <meta property="og:description"   content="Certified pre owned car dealership" />
-  <meta property="og:image"         content="" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="Hitech Cars" />
+    <meta property="og:description"   content="Hi-Tech Cars is a certified pre owned and used vehicle dealership based in Gaborone Botswana" />
+    <meta property="og:image"         content="img/logo.svg" />
+    <meta name="keywords" content="used cars, botswana, hi-tech cars, hitech, cars gaborone, cars botswana, pre owned, affordable cars">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

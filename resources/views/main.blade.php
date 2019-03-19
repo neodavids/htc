@@ -110,6 +110,7 @@
           <div class="col-12 col-sm-12 col-md-6 col-lg-6">
               <h3>Our Motto</h3>
               <p><em>"customer Satisfaction is our priority and high quality motor cars to all residents across the country of Botswana".</em></p>
+              <div data-width="100%" class="fb-comments" data-href="https://www.facebook.com/Hitech-CARS-Online-Showroom-1771264649855027/" data-numposts="5"></div>
           </div>
           <div class="col-12 col-sm-12 col-md-6 col-lg-6">
           <h3>Follow Us On Social Media</h3>
@@ -119,7 +120,7 @@
           </div>
       </div>
       <p style="color:white">Copyright &copy; 2019 Hi-Tech Cars
-      by <a href="https://twitter.com/mdo">rkm creatives</a>.</p>
+      by || <a href="https://www.facebook.com/RKM-Creatives-366209597550308/" style="color:white">rkm creatives</a>.</p>
       </div>
   </footer>
 

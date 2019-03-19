@@ -3,13 +3,13 @@
 @section('url', "img/logo.svg")
 
 @section('jumbotron')
-<section style="background:url(img/headercar2.jpg);background-size:cover;background-position:fixed;">
+<section style="background:url(img/headercar2.jpg);background-size:cover;background-attachment: fixed;">
   <div class="container">
     <div class="jumbotron" style="background-color:#343A40; color:white">
       <div class="container">
-        <h1 class="display-3">Give Us A Call</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a
-          jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.
+        <h1 class="display-3">Showcase</h1>
+        <p>Take a tour of our website and find the best quality pre owned and used vehicles at reasonable pricing. Contact us for more information regarding financing and other procedures @(+267) 3500151
+           or visit our showroom to have a look at our offerings. Like a car? don't hesitate to book a test drive, click the button bellow.
         </p>
         <p><a style="background-color:black;color:white" class="btn btn-lg" href="/contact" role="button">Request Test
             Drive</a></p>
@@ -25,23 +25,23 @@
     </div>
 
     <div class="col-12 col-sm-12 col-md-4 col-lg-2" style="margin-bottom:10px;">
-      <a style="width:80%;" class="btn btn-outline-dark" href="/cars?type=SUV">suv</a>
+      <a style="width:80%;" class="btn btn-outline-warning" href="/cars?type=SUV">suv</a>
     </div>
 
     <div class="col-12 col-sm-12 col-md-4 col-lg-2" style="margin-bottom:10px;">
-      <a style="width:80%;" class="btn btn-outline-dark" href="/cars?type=Sedan">sedan</a>
+      <a style="width:80%;" class="btn btn-outline-warning" href="/cars?type=Sedan">sedan</a>
     </div>
 
     <div class="col-12 col-sm-12 col-md-4 col-lg-2" style="margin-bottom:10px;">
-      <a style="width:80%;" class="btn btn-outline-dark" href="/cars?type=Sport">sport</a>
+      <a style="width:80%;" class="btn btn-outline-warning" href="/cars?type=Sport">sport</a>
     </div>
 
     <div class="col-12 col-sm-12 col-md-6 col-lg-2" style="margin-bottom:10px;">
-      <a style="width:80%;" class="btn btn-outline-dark" href="/cars?type=4x4">4x4</a>
+      <a style="width:80%;" class="btn btn-outline-warning" href="/cars?type=4x4">4x4</a>
     </div>
 
     <div class="col-12 col-sm-12 col-md-6 col-lg-2" style="margin-bottom:10px;">
-      <a style="width:80%;" class="btn btn-outline-dark" href="/cars">all</a>
+      <a style="width:80%;" class="btn btn-outline-warning" href="/cars">all</a>
     </div>
   </div>
 </div>
@@ -69,7 +69,7 @@
           <p>Make: {{$car->make}}</p>
           <p>Milleage: {{$car->milleage}}</p>
           <p>Engine: {{$car->fueltype}}</p>
-          <p>Price: BWP{{$car->price}}</p>
+          <p>Price: BWP {{$car->price}}</p>
 
           @if(Auth::user())
           <a href="/cars/{{$car->id}}" class="btn btn-dark">View Car</a>
@@ -95,4 +95,5 @@
     </div>
   </div>
 </div>
+
 @endsection
