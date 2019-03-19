@@ -39,22 +39,22 @@
         <div class="row">
             <div class="col-6 col-sm-6 col-md-6 col-lg-3">
            
-             <a style="width:100%; margin-top:5px" href="#" class="btn btn-lg btn-secondary">Suvs</a>
+             <a style="width:100%; margin-top:5px" href="/cars?type=SUV" class="btn btn-lg btn-secondary">Suvs</a>
     
             </div>
             <div class="col-6 col-sm-6 col-md-6 col-lg-3">
            
-           <a style="width:100%; margin-top:5px" href="#" class="btn btn-lg btn-secondary">Sedans</a>
+           <a style="width:100%; margin-top:5px" href="/cars?type=Sedan" class="btn btn-lg btn-secondary">Sedans</a>
      
              </div>
              <div class="col-6 col-sm-6 col-md-6 col-lg-3">
            
-           <a style="width:100%; margin-top:5px" href="#" class="btn btn-lg btn-secondary">Sports</a>
+           <a style="width:100%; margin-top:5px" href="/cars?type=Sport" class="btn btn-lg btn-secondary">Sports</a>
      
              </div>
              <div class="col-6 col-sm-6 col-md-6 col-lg-3">
            
-           <a style="width:100%; margin-top:5px" href="#" class="btn btn-lg btn-secondary">4x4s</a>
+           <a style="width:100%; margin-top:5px" href="/cars?type=4x4" class="btn btn-lg btn-secondary">4x4s</a>
      
              </div>
         </div>

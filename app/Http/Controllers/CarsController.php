@@ -18,13 +18,18 @@ class CarsController extends Controller
      */
     public function index()
     {
-        $cars = Car::paginate(8);
+        if(request()->has('type')){
+          $cars = Car::where('type', request('type'))->paginate(8)->appends('type', request('type'));
+        }else if(request()->has('search')){
+          $search = request()->get('search');
+          $cars = Car::where('make', 'like', '%'.$search.'%')->
+          orWhere('model', 'like', '%'.$search.'%')->
+          orWhere('year', 'like', '%'.$search.'%')->orWhere('type', 'like', '%'.$search.'%')->paginate(8);
+        }else{
+          $cars = Car::paginate(8);
+        }
       
         return view('cars.index', compact('cars'));
-    }
-
-    public function vehicles(){
-        return view('cars.vehicles');
     }
 
     /**
