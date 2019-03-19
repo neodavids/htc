@@ -5,14 +5,14 @@
 @section('jumbotron')
 
 <div class="container">
-  <div class="jumbotron">
+  <div class="jumbotron" style="background-color:#343A40; color:white">
       <div class="container">
         <h1 class="display-3">Give Us A Call</h1>
         <p>This is a template for a simple marketing or informational website. It includes a large callout called a
           jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.
         </p>
-        <p><a style="background-color:grey;color:white" class="btn btn-lg" href="#" role="button">Book A Test Drive &raquo;</a></p>
-        
+        <p><a style="background-color:black;color:white" class="btn btn-lg" href="/contact" role="button">Request Test Drive</a></p>
+         
       </div>
     </div>
   </div>
